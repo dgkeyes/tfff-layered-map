@@ -1,0 +1,69 @@
+---
+title: "TFFF Layered Map"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(here)
+library(tigris)
+library(janitor)
+library(tmap)
+library(sf)
+
+tfff_grants <- read_csv(here::here("data", "tfff-grants.csv")) %>%
+     mutate(popup = str_glue("<h2>{name}</h2>")) %>% 
+     st_as_sf(coords = c("lon", "lat"),
+              crs = 4326)
+
+
+
+tfff_grants_by_county <- tfff_grants %>% 
+     group_by(county) %>% 
+     summarize(total = sum(size))
+
+options(tigris_class = "sf")
+
+oregon_counties <- counties(state = "Oregon",
+                            cb = T) %>% 
+     clean_names() %>% 
+     select(name) %>% 
+     mutate(name = str_glue("{name} County"))
+
+tfff_grants_by_county <- oregon_counties %>% 
+     left_join(tfff_grants_by_county, by = c("name"= "county")) 
+
+
+```
+
+# tmap
+
+```{r}
+
+tmap_mode("view")
+
+tm_shape(tfff_grants_by_county) +
+     tm_polygons() +
+tm_shape(tfff_grants) +
+     tm_bubbles(size = "size")
+
+```
+
+
+# Leaflet
+
+```{r}
+
+# dept_pal <- colorFactor(topo.colors(4), tfff_grants$department)
+# 
+# leaflet(tfff_grants) %>%
+#      addProviderTiles(providers$CartoDB.Positron) %>%
+#      addCircleMarkers(radius = tfff_grants$size / 7500,
+#                       color = ~dept_pal(department),
+#                       popup = tfff_grants$popup) 
+```
+

@@ -1,0 +1,101 @@
+name,population,county,location,lon,lat
+Richland,176,Baker,"Richland, Oregon",-117.1685112,44.7690498
+Sandy,10644,Clackamas,"Sandy, Oregon",-122.2704417,45.3975203
+Lakeview,2296,Lake,"Lakeview, Oregon",-120.345792,42.18877210000001
+Gold Beach,2279,Curry,"Gold Beach, Oregon",-124.4217741,42.4073334
+Lowell,1087,Lane,"Lowell, Oregon",-122.7836822,43.9184592
+Tillamook,4997,Tillamook,"Tillamook, Oregon",-123.8440137,45.4562158
+Dayville,146,Grant,"Dayville, Oregon",-119.5358103,44.4682007
+Gervais,2631,Marion,"Gervais, Oregon",-122.8975952,45.1081752
+Granite,37,Grant,"Granite, Oregon",-118.4177241,44.8093131
+Ontario,10999,Malheur,"Ontario, Oregon",-116.9629378,44.0265525
+Gearhart,1524,Clatsop,"Gearhart, Oregon",-123.9112502,46.0242745
+St. Paul,439,Marion,"St. Paul, Oregon",-122.9767662,45.21122949999999
+Ukiah,189,Umatilla,"Ukiah, Oregon",-118.9324815,45.13403
+Dufur,623,Wasco,"Dufur, Oregon",-121.1306244,45.4531754
+Seaside,6540,Clatsop,"Seaside, Oregon",-123.9226385,45.9931636
+Gladstone,11986,Clackamas,"Gladstone, Oregon",-122.5973104,45.3842943
+Metolius,743,Jefferson,"Metolius, Oregon",-121.1783761,44.58650919999999
+La Grande,13074,Union,"La Grande, Oregon",-118.0877188,45.3245771
+Brownsville,1738,Linn,"Brownsville, Oregon",-122.9848108,44.39345710000001
+Vernonia,2143,Columbia,"Vernonia, Oregon",-123.1977937,45.8586888
+Siletz,1221,Lincoln,"Siletz, Oregon",-123.9201129,44.72178359999999
+Seneca,193,Grant,"Seneca, Oregon",-118.9716139,44.1345979
+Arlington,583,Gilliam,"Arlington, Oregon",-120.2008761,45.716796
+Lyons,1187,Linn,"Lyons, Oregon",-122.6150855,44.7745664
+Long Creek,192,Grant,"Long Creek, Oregon",-119.1041375,44.714042
+Cannon Beach,1702,Clatsop,"Cannon Beach, Oregon",-123.9615274,45.8917738
+Lafayette,3969,Yamhill,"Lafayette, Oregon",-123.1121766,45.2434865
+North Plains,2100,Washington,"North Plains, Oregon",-122.992888,45.5970077
+Imbler,306,Union,"Imbler, Oregon",-117.9621587,45.4595816
+Hines,1525,Harney,"Hines, Oregon",-119.0810481,43.5640385
+Dayton,2575,Yamhill,"Dayton, Oregon",-123.0835549,45.21638859999999
+Monmouth,10032,Polk,"Monmouth, Oregon",-123.2339888,44.8484524
+Banks,1934,Washington,"Banks, Oregon",-123.1144058,45.61777559999999
+Wheeler,419,Tillamook,"Wheeler, Oregon",-123.8806879,45.688996
+Vale,1833,Malheur,"Vale, Oregon",-117.2382311,43.9821055
+Drain,1157,Douglas,"Drain, Oregon",-123.3186987,43.65873089999999
+Lonerock,21,Gilliam,"Lonerock, Oregon",-119.8830749,45.08902519999999
+Prineville,9530,Crook,"Prineville, Oregon",-120.8344664,44.2998485
+Reedsport,4107,Douglas,"Reedsport, Oregon",-124.0967779,43.7023389
+Philomath,4599,Benton,"Philomath, Oregon",-123.3676014,44.540121
+Sumpter,203,Baker,"Sumpter, Oregon",-118.2021633,44.74570689999999
+Carlton,2067,Yamhill,"Carlton, Oregon",-123.1796697,45.2942902
+Condon,681,Gilliam,"Condon, Oregon",-120.1850344,45.2342966
+Falls City,975,Polk,"Falls City, Oregon",-123.4359382,44.8662285
+Dallas,15277,Polk,"Dallas, Oregon",-123.3170472,44.9192844
+Depoe Bay,1422,Lincoln,"Depoe Bay, Oregon",-124.0631713,44.8084467
+Independence,9227,Polk,"Independence, Oregon",-123.1867656,44.8512305
+Grass Valley,157,Sherman,"Grass Valley, Oregon",-120.7856113,45.3601247
+Veneta,4800,Lane,"Veneta, Oregon",-123.3509294,44.0487342
+Aurora,979,Marion,"Aurora, Oregon",-122.7559267,45.2309536
+Paisley,240,Lake,"Paisley, Oregon",-120.5460827,42.69376339999999
+Johnson City,580,Clackamas,"Johnson City, Oregon",-122.5806713,45.4049709
+Canby,17271,Clackamas,"Canby, Oregon",-122.6921558,45.26220499999999
+Adair Village,818,Benton,"Adair Village, Oregon",-123.2178759,44.6706762
+Baker City,9752,Baker,"Baker City, Oregon",-117.8343848,44.7748748
+Yachats,718,Lincoln,"Yachats, Oregon",-124.1048418,44.31123119999999
+Myrtle Creek,3459,Douglas,"Myrtle Creek, Oregon",-123.2931205,43.0201173
+Joseph,1063,Wallowa,"Joseph, Oregon",-117.2296127,45.3543187
+Prairie City,880,Grant,"Prairie City, Oregon",-118.7099477,44.46321349999999
+Gaston,688,Washington,"Gaston, Oregon",-123.1396147,45.4363004
+Heppner,1287,Morrow,"Heppner, Oregon",-119.5577997,45.3531842
+Molalla,8972,Clackamas,"Molalla, Oregon",-122.5756477,45.1462914
+Sublimity,2870,Marion,"Sublimity, Oregon",-122.7945335,44.8295663
+Milton-Freewater,7035,Umatilla,"Milton-Freewater, Oregon",-118.3877435,45.9326346
+Elgin,1732,Union,"Elgin, Oregon",-117.917434,45.5648612
+Pendleton,16881,Umatilla,"Pendleton, Oregon",-118.7885967,45.672075
+North Powder,436,Union,"North Powder, Oregon",-117.9199386,45.0284737
+Burns,2757,Harney,"Burns, Oregon",-119.0541032,43.5862606
+Klamath Falls,21399,Klamath,"Klamath Falls, Oregon",-121.7816704,42.224867
+Adams,348,Umatilla,"Adams, Oregon",-118.5624734,45.767354
+Athena,1140,Umatilla,"Athena, Oregon",-118.4905251,45.8117992
+Adrian,172,Malheur,"Adrian, Oregon",-117.0718261,43.7407155
+Oakland,936,Douglas,"Oakland, Oregon",-123.2984101,43.4220625
+Detroit,216,Marion,"Detroit, Oregon",-122.1497982,44.7340108
+Hermiston,17201,Umatilla,"Hermiston, Oregon",-119.2894604,45.8404101
+Moro,310,Sherman,"Moro, Oregon",-120.731168,45.4840141
+Aumsville,4013,Marion,"Aumsville, Oregon",-122.8709243,44.8409548
+John Day,1680,Grant,"John Day, Oregon",-118.95301,44.4159883
+Riddle,1191,Douglas,"Riddle, Oregon",-123.3642332,42.9509507
+Echo,702,Umatilla,"Echo, Oregon",-119.195567,45.7423537
+Turner,1984,Marion,"Turner, Oregon",-122.9528708,44.8431766
+Culver,1442,Jefferson,"Culver, Oregon",-121.2130974,44.5256753
+North Bend,9673,Coos,"North Bend, Oregon",-124.2242803,43.4065012
+Canyon City,672,Grant,"Canyon City, Oregon",-118.9502315,44.3895995
+St. Helens,13158,Columbia,"St. Helens, Oregon",-122.8212299,45.8589719
+Nehalem,278,Tillamook,"Nehalem, Oregon",-123.8940225,45.7201074
+Scotts Mills,367,Marion,"Scotts Mills, Oregon",-122.6684215,45.0428996
+Sisters,2472,Deschutes,"Sisters, Oregon",-121.5492119,44.2909491
+Hood River,7624,Hood River,"Hood River, Oregon",-121.5214623,45.7053966
+Sweet Home,9270,Linn,"Sweet Home, Oregon",-122.7361958,44.3976247
+Winston,5393,Douglas,"Winston, Oregon",-123.4125724,43.1223383
+Rainier,1920,Columbia,"Rainier, Oregon",-122.9359008,46.0891013
+Warrenton,5282,Clatsop,"Warrenton, Oregon",-123.9237557,46.1651049
+Bandon,3115,Coos,"Bandon, Oregon",-124.408448,43.1189978
+Bonanza,411,Klamath,"Bonanza, Oregon",-121.4061076,42.1987607
+Silverton,9753,Marion,"Silverton, Oregon",-122.7831455,45.0051213
+Sheridan,6094,Yamhill,"Sheridan, Oregon",-123.3948291,45.0992814
+Sherwood,19283,Washington,"Sherwood, Oregon",-122.8402122,45.3562638
+King City,3680,Washington,"King City, Oregon",-122.8044946,45.4026959
+Lincoln City,8536,Lincoln,"Lincoln City, Oregon",-124.0178914,44.95816440000001

@@ -15,55 +15,61 @@ library(janitor)
 library(tmap)
 library(sf)
 
-tfff_grants <- read_csv(here::here("data", "tfff-grants.csv")) %>%
-     mutate(popup = str_glue("<h2>{name}</h2>")) %>% 
-     st_as_sf(coords = c("lon", "lat"),
-              crs = 4326)
+
+tfff_grants <- read_sf(here("data", "tfff_grants.shp")) %>% 
+     mutate(rown = row_number()) %>% 
+     mutate(name = str_glue("Grant Number {rown}"))
 
 
+tfff_grants_by_county <- read_sf(here("data", "tfff_grants_by_county.shp"))
 
-tfff_grants_by_county <- tfff_grants %>% 
-     group_by(county) %>% 
-     summarize(total = sum(size))
+# Colors
 
-options(tigris_class = "sf")
+tfff_dark_green <- "#265142"
+tfff_light_green <- "#B5CC8E"
+tfff_orange <- "#e65100"
+tfff_yellow <- "#FBC02D"
+tfff_blue <- "#283593"
+tfff_red <- "#B71C1C"
+tfff_brown <- "#51261C"
+tfff_dark_gray <- "#545454"
+tfff_medium_gray <- "#a8a8a8"
+tfff_light_gray <- "#eeeeee"
 
-oregon_counties <- counties(state = "Oregon",
-                            cb = T) %>% 
-     clean_names() %>% 
-     select(name) %>% 
-     mutate(name = str_glue("{name} County"))
-
-tfff_grants_by_county <- oregon_counties %>% 
-     left_join(tfff_grants_by_county, by = c("name"= "county")) 
-
+tfff_depts_pal <- c("tfff_yellow",
+                         "tfff_red",
+                         "tfff_orange",
+                         "tfff_blue")
 
 ```
 
-# tmap
 
 ```{r}
 
 tmap_mode("view")
 
-tm_shape(tfff_grants_by_county) +
-     tm_polygons() +
-tm_shape(tfff_grants) +
-     tm_bubbles(size = "size")
+
+
+tm_shape(tfff_grants_by_county,
+         "County Totals",
+         legend.position = NA) +
+     tm_polygons(col = "total",
+                 title = "County Totals",
+                 legend.show = F,
+                 alpha = 0.6,
+                 palette = "Oranges") +
+     tm_shape(tfff_grants,
+              "Individual Grants") +
+     tm_dots(size = "size",
+             title = "",
+             alpha = 0.75,
+             palette = "Set1",
+             col = "department",
+             n = 4) 
+
+# tmaptools::palette_explorer()
+
 
 ```
 
-
-# Leaflet
-
-```{r}
-
-# dept_pal <- colorFactor(topo.colors(4), tfff_grants$department)
-# 
-# leaflet(tfff_grants) %>%
-#      addProviderTiles(providers$CartoDB.Positron) %>%
-#      addCircleMarkers(radius = tfff_grants$size / 7500,
-#                       color = ~dept_pal(department),
-#                       popup = tfff_grants$popup) 
-```
 

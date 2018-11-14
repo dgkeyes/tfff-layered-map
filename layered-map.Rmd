@@ -49,7 +49,7 @@ tfff_depts_pal <- c("tfff_yellow",
 tmap_mode("view")
 
 
-
+tm_basemap(leaflet::providers$Wikimedia) +
 tm_shape(tfff_grants_by_county,
          "County Totals",
          legend.position = NA) +

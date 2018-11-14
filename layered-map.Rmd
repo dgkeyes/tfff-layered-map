@@ -14,6 +14,8 @@ library(tigris)
 library(janitor)
 library(tmap)
 library(sf)
+library(leaflet)
+library(leaflet.extras)
 
 
 tfff_grants <- read_sf(here("data", "tfff_grants.shp")) %>% 
@@ -43,6 +45,7 @@ tfff_depts_pal <- c("tfff_yellow",
 
 ```
 
+# Regular Map
 
 ```{r}
 
@@ -71,5 +74,15 @@ tm_shape(tfff_grants_by_county,
 
 
 ```
+
+# Heatmap
+
+```{r}
+leaflet(tfff_grants) %>%
+     addProviderTiles(providers$CartoDB.Positron) %>%
+     addHeatmap(blur = 32,
+                max = 0.0001)
+```
+
 
 
